@@ -12,6 +12,7 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
@@ -19,7 +20,10 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+     "paths": {
+       
+     }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

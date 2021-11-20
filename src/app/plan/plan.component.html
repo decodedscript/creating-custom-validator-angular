@@ -1,0 +1,20 @@
+<form [formGroup]="planForm" (ngSubmit)="submitForm()" novalidate autocomplete="off" class="planform">
+    <h2>Add New Subscription</h2>
+    <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name">
+        <!-- error -->
+        <mat-error *ngIf="!name.valid">
+            {{nameError}}
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Amount</mat-label>
+        <input matInput formControlName="amount">
+        <!-- error -->
+        <mat-error *ngIf="!amount.valid ">
+            {{amountError}}
+        </mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Save</button>
+</form>
